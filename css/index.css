@@ -1,0 +1,1091 @@
+@font-face {
+  font-family: "Frutiger LT Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Frutiger LT Bold"),
+    url("../fonts/Frutiger LT 65 Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Frutiger LT Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Frutiger LT Roman"),
+    url("../fonts/Frutiger LT 55 Roman.woff") format("woff");
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
+/* SQUARES */
+.container-square {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.big-square {
+  width: 48px;
+  height: 48px;
+}
+
+.small-square {
+  width: 24px;
+  height: 24px;
+}
+
+.orange {
+  background-color: #f5821f;
+}
+
+.blue {
+  background-color: #60abe0;
+}
+
+.dark-blue {
+  background-color: #00599c;
+}
+
+.white {
+  background-color: #f9f9f9;
+}
+
+.yellow {
+  background-color: #f7cf28;
+}
+
+.green {
+  background-color: #beeb3c;
+}
+
+.align-button-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro {
+  height: 100vh;
+  background-color: #00599c;
+  position: relative;
+}
+
+#intro .col-md-7 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+#intro .logo {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+#intro h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  color: #f9f9f9;
+  margin: 24px 0 16px 0;
+}
+
+#intro h1 span {
+  font-size: 64px;
+  line-height: 64px;
+}
+
+#intro p {
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #60abe0;
+}
+
+#intro h2 {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  margin: 0;
+  color: #f9f9f9;
+}
+
+#intro a {
+  background: #f7729f;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #f9f9f9;
+  margin: 60px 0 0;
+  padding: 12px 24px;
+}
+
+#intro .intro-img {
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  width: 45%;
+  object-fit: contain;
+}
+
+#intro .intro-img.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  #intro {
+    height: initial;
+  }
+
+  #intro .logo {
+    position: relative;
+    margin: 0 auto 48px;
+  }
+
+  #intro .col-md-7 {
+    height: initial;
+  }
+
+  #intro h1 {
+    font-size: 44px;
+    line-height: 44px;
+    margin: 32px auto 16px;
+  }
+
+  #intro h1 span {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  #intro p {
+    font-size: 16px;
+    margin: auto;
+  }
+
+  #intro h2 {
+    font-size: 18px;
+    margin-bottom: 32px;
+    margin: auto;
+  }
+
+  #intro a {
+    margin: 32px auto;
+  }
+
+  #intro .intro-img.mobile {
+    display: block;
+  }
+
+  #intro .intro-img.desktop {
+    display: none;
+  }
+
+  #intro .intro-img {
+    position: relative;
+    width: initial;
+    bottom: initial;
+    margin: 0 auto 50px;
+  }
+}
+
+#vemservc {
+  background-color: #f7cf28;
+  padding: 84px 0 67px;
+  text-align: center;
+  position: relative;
+}
+
+#vemservc p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #00101c;
+  margin-bottom: 32px;
+}
+
+#vemservc .container-square.left {
+  position: absolute;
+  left: 115px;
+  bottom: 0;
+  transform: translateY(24px);
+  align-items: flex-end;
+}
+
+#vemservc .container-square.left .small-square {
+  margin-right: -24px;
+}
+
+#vemservc .container-square.right {
+  position: absolute;
+  right: 115px;
+  top: 0;
+  transform: translateY(-24px);
+}
+
+#vemservc .container-square.right .small-square {
+  margin-left: -24px;
+}
+
+@media screen and (max-width: 767px) {
+  #vemservc p {
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
+
+  #vemservc .container-square.right {
+    right: 20px;
+  }
+
+  #vemservc .container-square.left {
+    left: 22px;
+  }
+}
+
+#about .col-md-6 {
+  position: relative;
+}
+
+#about h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #00599c;
+  margin-top: 130px;
+}
+
+#about p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #00101c;
+  max-width: 500px;
+  margin: 0;
+}
+
+#about .about2 {
+  margin-top: 100px;
+  max-height: 540px;
+  object-fit: contain;
+}
+
+#about .container-square.left {
+  position: absolute;
+  left: 90px;
+  top: 70px;
+  transform: translateY(24px);
+}
+
+#about .container-square.left .small-square {
+  margin-left: -24px;
+}
+
+#about .container-square.right {
+  position: absolute;
+  right: 140px;
+  top: 220px;
+  align-items: flex-end;
+}
+
+#about .container-square.right .small-square {
+  margin-right: -24px;
+}
+
+#about a {
+  background: #60abe0;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 31px;
+  color: #f9f9f9;
+  margin: 60px auto 0;
+  padding: 12px 24px;
+}
+
+@media screen and (max-width: 767px) {
+  #about {
+    text-align: center;
+  }
+
+  #about h2 {
+    margin: 80px 0 8px;
+  }
+
+  #about p {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  #about img {
+    width: 100%;
+    margin: 0;
+  }
+
+  #about .row:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #about .about2 {
+    margin: 0;
+  }
+
+  #about a {
+    margin: 40px auto 0;
+  }
+
+  #about .container-square {
+    display: none;
+  }
+}
+
+/* TESTIMONY */
+
+#testimony {
+  padding: 72px 0 100px;
+  background-color: #beeb3c;
+  margin-bottom: 350px;
+  height: 450px;
+}
+
+#testimony .container {
+  position: relative;
+  height: 100%;
+}
+
+#testimony h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #00599c;
+  margin: 0 0 8px;
+}
+
+#testimony p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #00599c;
+  margin: 0 0 40px;
+}
+
+#testimony .push-down {
+  position: absolute;
+  bottom: -350px;
+  display: flex;
+  flex-direction: column;
+}
+
+#testimony .push-down .owl-carousel {
+  display: none;
+}
+
+#testimony .card {
+  background-color: #f9f9f9;
+  box-shadow: 0px 6px 40px -7px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+  padding: 46px 32px;
+}
+
+#testimony .align-author {
+  display: flex;
+  align-items: center;
+}
+
+#testimony .align-author img {
+  margin-right: 16px;
+}
+
+#testimony .card .align-author p {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#testimony .card p {
+  color: #00101c;
+  font-size: 15px;
+  line-height: 140%;
+  margin: 0 0 24px;
+}
+
+#testimony a {
+  background: #60abe0;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 31px;
+  color: #f9f9f9;
+  margin: 60px auto 0;
+  padding: 12px 24px;
+}
+
+@media screen and (max-width: 767px) {
+  #testimony {
+    height: initial;
+    text-align: center;
+    padding-bottom: 60px;
+    max-height: 100vh;
+    margin-bottom: 400px;
+  }
+
+  #testimony h2 {
+    font-size: 32px;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  #testimony p {
+    max-width: 260px;
+    margin: 0 auto 40px;
+  }
+
+  #testimony .push-down {
+    position: relative;
+    transform: initial;
+    margin-bottom: 0;
+    align-items: center;
+    bottom: 0;
+  }
+
+  #testimony .push-down .owl-carousel {
+    display: block;
+  }
+
+  #testimony .push-down .row {
+    display: none;
+  }
+
+  #testimony .card {
+    margin: 0 5px;
+    box-shadow: none;
+    height: 780px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #testimony .align-author img {
+    width: initial;
+  }
+
+  #testimony a {
+    margin: 70px 0 60px;
+  }
+}
+
+#about-banner {
+  margin-bottom: -100px;
+}
+
+#about-banner .container {
+  position: relative;
+}
+
+#about-banner .card {
+  background-color: #00599c;
+  padding: 48px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#about-banner .card .row {
+  width: 100%;
+}
+
+#about-banner .card h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #f9f9f9;
+  margin: 0 0 8px;
+}
+
+#about-banner .card p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f9f9f9;
+  margin: 0 0 24px;
+}
+
+#about-banner .card a {
+  background: #60abe0;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 31px;
+  color: #f9f9f9;
+  padding: 12px 24px;
+}
+
+#about-banner .about-banner-img {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #about-banner .card {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 36px 0;
+    height: initial;
+    text-align: center;
+  }
+
+  #about-banner .card h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  #about-banner .about-banner-img {
+    position: relative;
+    right: initial;
+    max-width: 280px;
+    margin: auto;
+  }
+}
+
+#trail {
+  background-color: #60abe0;
+  padding: 150px 0 0;
+  margin-bottom: 72px;
+}
+
+#trail h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  margin: 0 0 16px;
+}
+
+#trail p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+#trail img.desktop {
+  margin-top: 30px;
+}
+
+#trail img.mobile {
+  display: none;
+}
+
+#accordion-trail .card-accordion {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+#accordion-trail .card-accordion button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #fff;
+}
+
+#accordion-trail .card-accordion button img {
+  transition: 0.2s;
+  transform: rotate(180deg);
+}
+
+#accordion-trail .card-accordion button.collapsed img {
+  transition: 0.2s;
+  transform: rotate(0);
+}
+
+#accordion-trail .card-accordion button:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+#accordion-trail .card-accordion button:hover {
+  text-decoration: none;
+}
+
+#accordion-trail .card-accordion button p {
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+#accordion-trail .card-accordion button p span {
+  color: #f7cf28;
+  margin-right: 32px;
+  font-size: 32px;
+}
+
+#accordion-trail .card-accordion button p br.mobile {
+  display: none;
+}
+
+#accordion-trail .card-accordion .card-body {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 767px) {
+  #trail {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  #trail img.desktop {
+    display: none;
+  }
+
+  #trail img.mobile {
+    display: block;
+    width: 100%;
+  }
+
+  #accordion-trail .card-accordion button p {
+    font-size: 20px;
+  }
+
+  #accordion-trail .card-accordion button p br.desktop {
+    display: none;
+  }
+
+  #accordion-trail .card-accordion button p br.mobile {
+    display: block;
+  }
+}
+
+#requirements {
+  padding: 0 0 53px 0;
+}
+
+#requirements h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #00101c;
+  margin: 0;
+}
+
+#requirements .align-text-end {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+#requirements p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #00101c;
+  max-width: 455px;
+}
+
+#requirements .card {
+  margin-top: 56px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+}
+
+#requirements .card h3 {
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 0;
+}
+
+#requirements .card p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  color: #f9f9f9;
+  max-width: 290px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#requirements a {
+  background: #60abe0;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 31px;
+  color: #f9f9f9;
+  padding: 12px 24px;
+  margin: 40px auto 0;
+}
+
+@media screen and (max-width: 767px) {
+  #requirements {
+    text-align: center;
+  }
+
+  #requirements h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+
+  #requirements p {
+    margin-bottom: 45px;
+  }
+
+  #requirements .card {
+    margin: 0 0 16px;
+    height: 165px;
+  }
+}
+
+#tips {
+  background-color: #f7729f;
+  padding: 60px 0 0;
+}
+
+#tips h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+#tips p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  max-width: 780px;
+  margin: 0 auto 63px;
+}
+
+#accordion-tips .card-accordion {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+#accordion-tips .card-accordion button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+#accordion-tips .card-accordion button img {
+  transition: 0.2s;
+  transform: rotate(180deg);
+}
+
+#accordion-tips .card-accordion button.collapsed img {
+  transition: 0.2s;
+  transform: rotate(0);
+}
+
+#accordion-tips .card-accordion button:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+#accordion-tips .card-accordion button:hover {
+  text-decoration: none;
+}
+
+#accordion-tips .card-accordion button p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+}
+
+#accordion-tips .card-accordion button p br {
+  display: none;
+}
+
+#accordion-tips .card-accordion button p span {
+  color: #f7cf28;
+}
+
+#accordion-tips .card-accordion .card-body {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+#tips .banner {
+  height: 295px;
+  position: relative;
+  bottom: -100px;
+  padding-left: 40px;
+}
+
+#tips .banner h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #004480;
+  margin: 46px 0 16px;
+}
+
+#tips .banner p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #004480;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+#tips .banner a {
+  background: #60abe0;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 31px;
+  color: #f9f9f9;
+  padding: 12px 24px;
+}
+
+#tips .banner img {
+  position: absolute;
+  top: -52px;
+  right: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  #tips h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  #tips p {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 52px;
+  }
+
+  #accordion-tips .card-accordion button p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  #accordion-tips .card-accordion button p br {
+    display: block;
+  }
+
+  #tips .banner {
+    height: initial;
+    text-align: center;
+    padding: 0;
+  }
+
+  #tips .banner p {
+    text-align: center;
+  }
+
+  #tips .banner img {
+    position: relative;
+    top: initial;
+    right: initial;
+    margin-top: 24px;
+  }
+}
+
+#subscribe {
+  background-color: #beeb3c;
+  padding-top: 200px;
+}
+
+#subscribe h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #00599c;
+  margin: 0;
+  text-align: center;
+}
+
+#subscribe p {
+  font-family: "Frutiger LT Roman", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #00599c;
+  margin-bottom: 32px;
+}
+
+#subscribe a {
+  background: #60abe0;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 31px;
+  color: #f9f9f9;
+  padding: 12px 24px;
+  margin: 0 auto 80px;
+}
+
+@media screen and (max-width: 767px) {
+  #subscribe h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  #subscribe p {
+    max-width: 200px;
+    margin: 0 auto 32px;
+  }
+}
+
+.top-footer {
+  background-color: #004480;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-footer .align-items-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-footer ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.top-footer ul li {
+  display: inline-block;
+  padding: 12px;
+}
+
+.down-footer {
+  padding: 20px 0;
+  background-color: #000000;
+  text-align: center;
+}
+
+.down-footer p {
+  font-family: "Frutiger LT Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .top-footer {
+    height: initial;
+    padding: 32px 0;
+  }
+
+  .top-footer img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .top-footer ul {
+    margin-top: 32px;
+  }
+}
